@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar-2">
+            <button class="menu-button">
+                <img src="assets/menu-icon.png" alt="Menu Icon" class="menu-icon"> MENU
+            </button>
+            <div class="navbar-buttons">
+                <button class="masterclass-btn">Masterclass</button>
+                <button class="nav-button">Register My Attendance</button>
+                <img src="assets/logo.png" alt="Logo" class="logo">
+            </div>
+        </nav>
+
+        <div class="content-real-2">
+            <div class="welcome-text">Certificate</div>
+            <div class="subheading">You have completed the feedback form and payment process. Please download your certificate below.</div>
+
+            <div class="button-container">
+                <button id="masterclass-btn" class="agenda-btn active">Master Class</button>
+                <button id="seminar-btn" class="agenda-btn">Seminar Rundown</button>
+            </div>
+
+            <div id="certificate-masterclass" class="certificate-box">
+                <div class="element-certificate">
+                    <img src="assets/certificate-success.png" alt="certificate-success">
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-text">
+                        Certificate of Attendance<br>GRC Summit 2024 Masterclass
+                    </div>
+                    <button class="download-btn-certificate">Download</button>
+                </div>
+                <div class="feedback-card fail">
+                    <img src="assets/icon-fail.png" alt="Fail Icon" class="feedback-icon">
+                    <div class="feedback-info">
+                        <div class="feedback-text">Feedback Form</div>
+                        <button class="feedback-btn">Fill Out Now</button>
+                    </div>
+                </div>
+                <div class="feedback-card success">
+                    <img src="assets/icon-success.png" alt="Success Icon" class="feedback-icon">
+                    <div class="feedback-info">
+                        <div class="feedback-text">Feedback Form</div>
+                    </div>
+                </div>
+                <div class="feedback-card fail">
+                    <img src="assets/icon-fail.png" alt="Fail Icon" class="feedback-icon">
+                    <div class="feedback-info">
+                        <div class="feedback-text">Payment</div>
+                        <button class="feedback-btn-payment-fail">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="certificate-seminar" class="certificate-box" style="display: none;">
+
+                <div class="registration-status">
+                    You are <span class="not-registered">NOT REGISTERED</span> <br> to our International Seminar
+                </div>
+                <div class="element-certificate">
+                    <img src="assets/uninterested-seminar.png" alt="certificate-success">
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="assets/logo.png" alt="Footer Logo" class="footer-logo">
+                    <p class="footer-text">For further inquiries, please reach us through: info@grcsummit.co.id</p>
+                </div>
+                <div class="footer-column">
+                    <div class="sponsor-group">
+                        <p>Organized by:</p>
+                        <div class="sponsor-logos">
+                            <img src="assets/organizedby-1.png" alt="Organizer Logo 1">
+                            <img src="assets/organizedby-2.png" alt="Organizer Logo 2">
+                            <img src="assets/organizedby-3.png" alt="Organizer Logo 2">
+                            <img src="assets/organizedby-4.png" alt="Organizer Logo 2">
+                            <img src="assets/organizedby-5.png" alt="Organizer Logo 2">
+                        </div>
+
+                        <p>Sponsored by:</p>
+                        <div class="sponsor-logos">
+                            <img src="assets/supportedby-1.png" alt="Sponsor Logo 1">
+                            <img src="assets/supportedby-2.png" alt="Sponsor Logo 2">
+                            <img src="assets/supportedby-3.png" alt="Organizer Logo 2">
+                            <img src="assets/supportedby-4.png" alt="Organizer Logo 2">
+                            <img src="assets/supportedby-5.png" alt="Organizer Logo 2">
+                            <img src="assets/supportedby-6.png" alt="Organizer Logo 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line blue"></div>
+                <div class="footer-line orange"></div>
+                <div class="footer-line red"></div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="sidebar">
+        <div class="header-lines">
+            <div class="line-blue"></div>
+            <div class="line-green"></div>
+            <div class="line-red"></div>
+        </div>
+        
+        <img src="assets/sidebar-pict.png" alt="Profile Picture" class="sidebar-pic">
+        
+        <div class="greeting">
+            <span class="hello">Hello,</span> <span class="name">JawHead!</span>
+        </div>
+
+        <h1>MENU</h1>
+        <a href="home.html">Home Page</a>
+        <a href="live_session.html">Live Session</a>
+        <a href="program_rundown.html">Program Rundown</a>
+        <a href="speakers.html">Speakers Profile</a>
+        <a href="evaluate_info.html">Evaluation Form</a>
+        <a href="certificate.html">Certificate</a>
+        <button class="close-button">&times;</button>
+    </div>
+
+    <script>
+        document.querySelector('.menu-button').addEventListener('click', function () {
+            document.querySelector('.sidebar').style.width = '280px';
+        });
+
+        document.querySelector('.close-button').addEventListener('click', function () {
+            document.querySelector('.sidebar').style.width = '0';
+        });
+
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                sidebarLinks.forEach(link => link.classList.remove('active'));
+
+                this.classList.add('active');
+            });
+        });
+
+        window.addEventListener('load', function() {
+            sidebarLinks.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('.agenda-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.certificate-box').forEach(box => box.style.display = 'none');
+                document.querySelector(`#certificate-${this.id.replace('-btn', '')}`).style.display = 'block';
+                
+                document.querySelectorAll('.agenda-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        document.querySelector('#certificate-masterclass').style.display = 'block';
+    </script>
+</body>
+</html>

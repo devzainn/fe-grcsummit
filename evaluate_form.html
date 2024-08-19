@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evaluate Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar-2">
+                <button class="menu-button">
+                    <img src="assets/menu-icon.png" alt="Menu Icon"
+                        class="menu-icon"> MENU
+                </button>
+                <div class="navbar-buttons">
+                    <button class="masterclass-btn">Masterclass</button>
+                    <button class="nav-button">Register My Attendance</button>
+                    <img src="assets/logo.png" alt="Logo" class="logo">
+                </div>
+            </nav>
+ 
+
+            <div class="content-real-2">
+                <div class="welcome-text">Evaluation Form</div>
+                <div class="subheading">Help us improve our event.</div>
+
+                <div class="evaluate-form-box">
+                    <div class="form-group">
+                        <label for="fullname">Fullname <span class="required">*</span></label>
+                        <input type="text" id="fullname" name="fullname" class="short-essay" placeholder="Mr. Bennet Xavier" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label>Please select your gender <span class="required">*</span></label>
+                        <div class="gender-options">
+                            <label class="gender-option" id="male-label">
+                                <input type="radio" name="gender" value="male" id="male-radio">
+                                <span>Male</span>
+                            </label>
+                            <label class="gender-option" id="female-label">
+                                <input type="radio" name="gender" value="female" id="female-radio">
+                                <span>Female</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="how-heard">How did you hear about the event? <span class="required">*</span></label>
+                        <input type="text" id="how-heard" name="how-heard" class="short-essay" placeholder="Your Answer" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label>How did we organize the registration and pre-event activities?</label>
+                        <div class="rating-wrapper">
+                            <div class="rating-labels">
+                                <span>Poor</span>
+                            </div>
+                            <div class="rating-options">
+                                <label>
+                                    <input type="radio" name="rating" value="1">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">1</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">2</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">3</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">4</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">5</span>
+                                </label>
+                            </div>
+                            <div class="rating-labels">
+                                <span>Excellent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How did we organize the event on D-Days?</label>
+                        <div class="rating-wrapper">
+                            <div class="rating-labels">
+                                <span>Poor</span>
+                            </div>
+                            <div class="rating-options">
+                                <label>
+                                    <input type="radio" name="rating" value="1">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">1</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">2</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">3</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">4</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">5</span>
+                                </label>
+                            </div>
+                            <div class="rating-labels">
+                                <span>Excellent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How were the venue and facilities?</label>
+                        <div class="rating-wrapper">
+                            <div class="rating-labels">
+                                <span>Poor</span>
+                            </div>
+                            <div class="rating-options">
+                                <label>
+                                    <input type="radio" name="rating" value="1">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">1</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">2</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">3</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">4</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">5</span>
+                                </label>
+                            </div>
+                            <div class="rating-labels">
+                                <span>Excellent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How were the topic and presentation were delivered?</label>
+                        <div class="rating-wrapper">
+                            <div class="rating-labels">
+                                <span>Poor</span>
+                            </div>
+                            <div class="rating-options">
+                                <label>
+                                    <input type="radio" name="rating" value="1">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">1</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">2</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">3</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">4</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">5</span>
+                                </label>
+                            </div>
+                            <div class="rating-labels">
+                                <span>Excellent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-line"></div>
+
+                    <div class="form-group">
+                        <label>How satisfied were you?</label>
+                        <div class="rating-wrapper">
+                            <div class="rating-labels">
+                                <span>Very Dissatisfying</span>
+                            </div>
+                            <div class="rating-options">
+                                <label>
+                                    <input type="radio" name="rating" value="1">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">1</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">2</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">3</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">4</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    <span class="rating-circle"></span>
+                                    <span class="rating-value">5</span>
+                                </label>
+                            </div>
+                            <div class="rating-labels">
+                                <span>Very Satisfying</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="reason-part">If you were not satisfied, please indicate the reason</label>
+                        <textarea id="reason-part" name="reason-part" rows="4" placeholder="Your Answer"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="useful-part">What did you find most useful about the program?</label>
+                        <textarea id="useful-part" name="useful-part" rows="4" placeholder="Your Answer"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specific-part">Are there specific topics you would add to enhance the program?</label>
+                        <textarea id="specific-part" name="specific-part" rows="4" placeholder="Your Answer"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recommend-part">Will you recommend this program to your colleague?</label>
+                        <textarea id="recommend-part" name="recommend-part" rows="4" placeholder="Your Answer"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recommend-program-part">Other recommendation for program improvement</label>
+                        <textarea id="recommend-program-part" name="recommend-program-part" rows="4" placeholder="Your Answer"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button-form">Submit</button>
+                </div>
+                
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <img src="assets/logo.png" alt="Footer Logo" class="footer-logo">
+                        <p class="footer-text">For further inquiries, please reach us through: info@grcsummit.co.id</p>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sponsor-group">
+                            <p>Organized by:</p>
+                            <div class="sponsor-logos">
+                                <img src="assets/organizedby-1.png" alt="Organizer Logo 1">
+                                <img src="assets/organizedby-2.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-3.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-4.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-5.png" alt="Organizer Logo 2">
+                            </div>
+
+                            <p>Sponsored by:</p>
+                            <div class="sponsor-logos">
+                                <img src="assets/supportedby-1.png" alt="Sponsor Logo 1">
+                                <img src="assets/supportedby-2.png" alt="Sponsor Logo 2">
+                                <img src="assets/supportedby-3.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-4.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-5.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-6.png" alt="Organizer Logo 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-line blue"></div>
+                    <div class="footer-line orange"></div>
+                    <div class="footer-line red"></div>
+                </div>
+            </footer>
+        </div>
+
+        <div id="modal-feedback" class="modal-feedback">
+            <div class="modal-content-feedback">
+                <div class="modal-body-feedback">
+                    <img src="assets/appricitaed-feedback.png" alt="Success Icon" class="modal-icon-feedback">
+                    <h2 class="modal-thank-you-feedback">Much Appreciated!</h2>
+                    <p class="modal-message-feedback">For sharing your valuable feedback with us. <br> We have successfully recorded your input and appreciate your contribution.</p>
+                </div>
+                <button id="back-to-home" class="modal-button-feedback">Back To Home</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-lines">
+                <div class="line-blue"></div>
+                <div class="line-green"></div>
+                <div class="line-red"></div>
+            </div>
+            
+            <img src="assets/sidebar-pict.png" alt="Profile Picture" class="sidebar-pic">
+            
+            <div class="greeting">
+                <span class="hello">Hello,</span> <span class="name">JawHead!</span>
+            </div>
+
+            <h1>MENU</h1>
+            <a href="home.html">Home Page</a>
+            <a href="live_session.html">Live Session</a>
+            <a href="program_rundown.html">Program Rundown</a>
+            <a href="speakers.html">Speakers Profile</a>
+            <a href="evaluate_info.html">Evaluation Form</a>
+            <a href="certificate.html">Certificate</a>
+            <button class="close-button">&times;</button>
+        </div>
+
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function () {
+                document.querySelector('.sidebar').style.width = '280px';
+            });
+    
+            document.querySelector('.close-button').addEventListener('click', function () {
+                document.querySelector('.sidebar').style.width = '0';
+            });
+
+            const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    sidebarLinks.forEach(link => link.classList.remove('active'));
+
+                    this.classList.add('active');
+                });
+            });
+
+            window.addEventListener('load', function() {
+                sidebarLinks.forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const maleLabel = document.getElementById('male-label');
+                const femaleLabel = document.getElementById('female-label');
+                const maleRadio = document.getElementById('male-radio');
+                const femaleRadio = document.getElementById('female-radio');
+
+                function updateGenderSelection() {
+                    if (maleRadio.checked) {
+                        maleLabel.classList.add('active');
+                        femaleLabel.classList.remove('active');
+                    } else if (femaleRadio.checked) {
+                        femaleLabel.classList.add('active');
+                        maleLabel.classList.remove('active');
+                    }
+                }
+
+                maleLabel.addEventListener('click', function() {
+                    maleRadio.checked = true;
+                    updateGenderSelection();
+                });
+
+                femaleLabel.addEventListener('click', function() {
+                    femaleRadio.checked = true;
+                    updateGenderSelection();
+                });
+
+                updateGenderSelection();
+            });
+
+
+            document.addEventListener("DOMContentLoaded", (event) => {
+                var modal = document.getElementById("modal-feedback");
+                var btn = document.querySelector(".submit-button-form");
+                var backToHomeBtn = document.getElementById("back-to-home");
+
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                };
+
+                backToHomeBtn.onclick = function () {
+                    window.location.href = "home.html";
+                };
+
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";
+                    }
+                };
+            });
+        </script>
+    </body>
+</html>

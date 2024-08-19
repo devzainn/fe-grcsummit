@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evaluate Info</title>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar-2">
+                <button class="menu-button">
+                    <img src="assets/menu-icon.png" alt="Menu Icon"
+                        class="menu-icon"> MENU
+                </button>
+                <div class="navbar-buttons">
+                    <button class="masterclass-btn">Masterclass</button>
+                    <button class="nav-button">Register My Attendance</button>
+                    <img src="assets/logo.png" alt="Logo" class="logo">
+                </div>
+            </nav>
+ 
+
+            <div class="content-real-2">
+                <div class="welcome-text">Evaluation Form</div>
+                <div class="subheading">Help us improve our event.</div>
+
+                <div class="evaluate-info-box">
+                    <h1>We value your opinion!</h1>
+                    <p>Help us improve future conferences by providing your feedback on GRC Summit 2024. Take a moment to complete our quick survey and share your thoughts.</p>
+                    <div class="centered-content">
+                        <img src="assets/geometry.png" alt="geometry">
+                        <button onclick="redirectToEvaluateForm()">Start</button>
+                    </div>
+                    <p>Your feedback is vital in shaping the future of GRC and ESG events. Let us know what worked well and how we can enhance the experience for our diverse audience.</p>
+                    <p>Rest assured, your responses will be kept confidential and used solely for the purpose of evaluating and enhancing future events. We appreciate your time and commitment in helping us create an even better experience for you and others in the risk management community.</p>
+                    <p>Thank you once again for your participation and for being part of GRC Summit 2024.</p>
+                    <p>We look forward to your valuable feedback!</p>
+
+                    <div class="signature">
+                        <p>Yours Truly,</p>
+                        <p>
+                            <span class="grc-text">
+                                <span class="grc-g">G</span>
+                                <span class="grc-r">R</span>
+                                <span class="grc-c">C</span>
+                            </span>
+                            <span class="summit-text"> Summit 2024</span>
+                            <span class="committee-text"> Committee</span>
+                        </p>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <img src="assets/logo.png" alt="Footer Logo" class="footer-logo">
+                        <p class="footer-text">For further inquiries, please reach us through: info@grcsummit.co.id</p>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sponsor-group">
+                            <p>Organized by:</p>
+                            <div class="sponsor-logos">
+                                <img src="assets/organizedby-1.png" alt="Organizer Logo 1">
+                                <img src="assets/organizedby-2.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-3.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-4.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-5.png" alt="Organizer Logo 2">
+                            </div>
+
+                            <p>Sponsored by:</p>
+                            <div class="sponsor-logos">
+                                <img src="assets/supportedby-1.png" alt="Sponsor Logo 1">
+                                <img src="assets/supportedby-2.png" alt="Sponsor Logo 2">
+                                <img src="assets/supportedby-3.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-4.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-5.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-6.png" alt="Organizer Logo 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-line blue"></div>
+                    <div class="footer-line orange"></div>
+                    <div class="footer-line red"></div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-lines">
+                <div class="line-blue"></div>
+                <div class="line-green"></div>
+                <div class="line-red"></div>
+            </div>
+            
+            <img src="assets/sidebar-pict.png" alt="Profile Picture" class="sidebar-pic">
+            
+            <div class="greeting">
+                <span class="hello">Hello,</span> <span class="name">JawHead!</span>
+            </div>
+
+            <h1>MENU</h1>
+            <a href="home.html">Home Page</a>
+            <a href="live_session.html">Live Session</a>
+            <a href="program_rundown.html">Program Rundown</a>
+            <a href="speakers.html">Speakers Profile</a>
+            <a href="evaluate_info.html">Evaluation Form</a>
+            <a href="certificate.html">Certificate</a>
+            <button class="close-button">&times;</button>
+        </div>
+
+        <script>
+            function redirectToEvaluateForm() {
+                window.location.href = 'evaluate_form.html';
+            }
+
+            document.querySelector('.menu-button').addEventListener('click', function () {
+                document.querySelector('.sidebar').style.width = '280px';
+            });
+    
+            document.querySelector('.close-button').addEventListener('click', function () {
+                document.querySelector('.sidebar').style.width = '0';
+            });
+
+            const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    sidebarLinks.forEach(link => link.classList.remove('active'));
+
+                    this.classList.add('active');
+                });
+            });
+
+            window.addEventListener('load', function() {
+                sidebarLinks.forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+        </script>
+    </body>
+</html>

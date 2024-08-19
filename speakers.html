@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Speakers</title>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar-2">
+                <button class="menu-button">
+                    <img src="assets/menu-icon.png" alt="Menu Icon"
+                        class="menu-icon"> MENU
+                </button>
+                <div class="navbar-buttons">
+                    <button class="masterclass-btn">Masterclass</button>
+                    <button class="nav-button">Register My Attendance</button>
+                    <img src="assets/logo.png" alt="Logo" class="logo">
+                </div>
+            </nav>
+ 
+
+            <div class="content-real-2">
+                <div class="welcome-text">Meet our Speakers</div>
+                <div class="subheading">GRC Summit 2024 speakers are from a wide variety of industries and expertise.</div>
+
+                <div class="speakers-box">
+
+                    <div class="speaker-card-speakers" onclick="openSpeakerModal('speaker1')">
+                        <img src="assets/contoh2.jpg" alt="Speaker 1" class="speaker-photo-speakers">
+                        <div class="speaker-info-speakers">
+                            <div class="speaker-name-speakers">John Doe</div>
+                            <div class="speaker-title-speakers">CEO</div>
+                            <div class="speaker-company-speakers">ABC Corporation</div>
+                        </div>
+                    </div>
+                    <div class="speaker-card-speakers" onclick="openSpeakerModal('speaker2')">
+                        <img src="assets/speaker2.jpg" alt="Speaker 2" class="speaker-photo-speakers">
+                        <div class="speaker-info-speakers">
+                            <div class="speaker-name-speakers">Jane Smith</div>
+                            <div class="speaker-title-speakers">CFO</div>
+                            <div class="speaker-company-speakers">XYZ Inc.</div>
+                        </div>
+                    </div>
+                    <div class="speaker-card-speakers" onclick="openSpeakerModal('speaker3')">
+                        <img src="assets/speaker3.jpg" alt="Speaker 3" class="speaker-photo-speakers">
+                        <div class="speaker-info-speakers">
+                            <div class="speaker-name-speakers">Alice Johnson</div>
+                            <div class="speaker-title-speakers">CTO</div>
+                            <div class="speaker-company-speakers">Tech Solutions</div>
+                        </div>
+                    </div>
+                    <div class="speaker-card-speakers" onclick="openSpeakerModal('speaker4')">
+                        <img src="assets/speaker4.jpg" alt="Speaker 4" class="speaker-photo-speakers">
+                        <div class="speaker-info-speakers">
+                            <div class="speaker-name-speakers">Bob Brown</div>
+                            <div class="speaker-title-speakers">COO</div>
+                            <div class="speaker-company-speakers">Innovate Ltd.</div>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card-speakers" onclick="openSpeakerModal('speaker4')">
+                        <img src="assets/speaker4.jpg" alt="Speaker 4" class="speaker-photo-speakers">
+                        <div class="speaker-info-speakers">
+                            <div class="speaker-name-speakers">Bob Brown</div>
+                            <div class="speaker-title-speakers">COO</div>
+                            <div class="speaker-company-speakers">Innovate Ltd.</div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <div id="speaker-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-photo">
+                            <img src="assets/speaker1.jpg" alt="Speaker Photo" class="modal-photo-img">
+                            <div class="modal-photo-info">
+                                <div class="modal-photo-name">John Doe</div>
+                                <div class="modal-photo-title">CEO</div>
+                                <div class="modal-photo-company">ABC Corporation</div>
+                            </div>
+                        </div>
+                        <div class="modal-details">
+                            <p id="modal-bio">Detailed bio about the speaker will go here.</p>
+                        </div>
+                    </div>
+                    <span class="close-btn" onclick="closeSpeakerModal()">&times;</span>
+                </div>
+            </div>
+                   
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <img src="assets/logo.png" alt="Footer Logo" class="footer-logo">
+                        <p class="footer-text">For further inquiries, please reach us through: info@grcsummit.co.id</p>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sponsor-group">
+                            <p>Organized by:</p>
+                            <div class="sponsor-logos">
+                                <img src="assets/organizedby-1.png" alt="Organizer Logo 1">
+                                <img src="assets/organizedby-2.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-3.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-4.png" alt="Organizer Logo 2">
+                                <img src="assets/organizedby-5.png" alt="Organizer Logo 2">
+                            </div>
+
+                            <p>Sponsored by:</p>
+                            <div class="sponsor-logos">
+                                <img src="assets/supportedby-1.png" alt="Sponsor Logo 1">
+                                <img src="assets/supportedby-2.png" alt="Sponsor Logo 2">
+                                <img src="assets/supportedby-3.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-4.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-5.png" alt="Organizer Logo 2">
+                                <img src="assets/supportedby-6.png" alt="Organizer Logo 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-line blue"></div>
+                    <div class="footer-line orange"></div>
+                    <div class="footer-line red"></div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="sidebar">
+            <div class="header-lines">
+                <div class="line-blue"></div>
+                <div class="line-green"></div>
+                <div class="line-red"></div>
+            </div>
+            
+            <img src="assets/sidebar-pict.png" alt="Profile Picture" class="sidebar-pic">
+            
+            <div class="greeting">
+                <span class="hello">Hello,</span> <span class="name">JawHead!</span>
+            </div>
+
+            <h1>MENU</h1>
+            <a href="home.html">Home Page</a>
+            <a href="live_session.html">Live Session</a>
+            <a href="program_rundown.html">Program Rundown</a>
+            <a href="speakers.html">Speakers Profile</a>
+            <a href="evaluate_info.html">Evaluation Form</a>
+            <a href="certificate.html">Certificate</a>
+            <button class="close-button">&times;</button>
+        </div>
+
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function () {
+                document.querySelector('.sidebar').style.width = '280px';
+            });
+    
+            document.querySelector('.close-button').addEventListener('click', function () {
+                document.querySelector('.sidebar').style.width = '0';
+            });
+
+            const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    sidebarLinks.forEach(link => link.classList.remove('active'));
+
+                    this.classList.add('active');
+                });
+            });
+
+            window.addEventListener('load', function() {
+                sidebarLinks.forEach(link => {
+                    if (link.href === window.location.href) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            function openSpeakerModal(speakerId) {
+                var modal = document.getElementById('speaker-modal');
+                var modalName = document.querySelector('.modal-photo-name');
+                var modalTitle = document.querySelector('.modal-photo-title');
+                var modalCompany = document.querySelector('.modal-photo-company');
+                var modalBio = document.getElementById('modal-bio');
+                var modalPhoto = document.querySelector('.modal-photo-img');
+
+                var speakers = {
+                    speaker1: {
+                        name: "Jane Smith",
+                        title: "CFO",
+                        company: "XYZ Inc.",
+                        bio: "Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip Mr. Michael Rasmussen is the founder of KFC because mirip banget, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat akkaspokd poasiw 9ddsut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip eut aliquip ",
+                        photo: "assets/contoh2.jpg"
+                    },
+                    speaker2: {
+                        name: "Jane Smith",
+                        title: "CFO",
+                        company: "XYZ Inc.",
+                        bio: "Detailed bio about Jane Smith.",
+                        photo: "assets/speaker2.jpg"
+                    },
+                    speaker3: {
+                        name: "Alice Johnson",
+                        title: "CTO",
+                        company: "Tech Solutions",
+                        bio: "Detailed bio about Alice Johnson.",
+                        photo: "assets/speaker3.jpg"
+                    },
+                    speaker4: {
+                        name: "Bob Brown",
+                        title: "COO",
+                        company: "Innovate Ltd.",
+                        bio: "Detailed bio about Bob Brown.",
+                        photo: "assets/speaker4.jpg"
+                    }
+                };
+
+                var speaker = speakers[speakerId];
+                modalName.textContent = speaker.name;
+                modalTitle.textContent = speaker.title;
+                modalCompany.textContent = speaker.company;
+                modalBio.textContent = speaker.bio;
+                modalPhoto.src = speaker.photo;
+
+                modal.style.display = 'block';
+            }
+
+            function closeSpeakerModal() {
+                var modal = document.getElementById('speaker-modal');
+                modal.style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                var modal = document.getElementById('speaker-modal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            };
+
+
+        </script>
+    </body>
+</html>
